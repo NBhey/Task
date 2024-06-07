@@ -31,5 +31,6 @@ module.exports = {
     "no-console": "off",
     "no-alert": "off",
     "no-unused-expressions": ["warn", { allowTernary: true }],
+    "no-plusplus": ["warn", { allowForLoopAfterthoughts: true }],
   },
 };

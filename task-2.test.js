@@ -1,6 +1,6 @@
 import { moreLess, withdrawalMonth, check } from "./task-2.js";
 
-describe("Test for task-1", () => {
+describe("Test for task-2", () => {
   it("Function is a function", () => {
     expect(moreLess).toBeInstanceOf(Function);
     expect(withdrawalMonth).toBeInstanceOf(Function);
