@@ -3,37 +3,33 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'airbnb-base',
-    'prettier'
-  ],
+  extends: ["airbnb-base", "prettier"],
   overrides: [
     {
       env: {
         node: true,
       },
-      files: [
-        '.eslintrc.{js,cjs}',
-      ],
+      files: [".eslintrc.{js,cjs}"],
       parserOptions: {
-        sourceType: 'script',
+        sourceType: "script",
       },
     },
   ],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
   rules: {
-    "max-len": ["warn", { code: 150 }],
-    "object-curly-spacing": 'off',
-    "quotes": 'off',
-    "quote-props": 'off',
-    "linebreak-style": 'off',
+    "max-len": ["warn", { code: 155 }],
+    "object-curly-spacing": "off",
+    quotes: "off",
+    "quote-props": "off",
+    "linebreak-style": "off",
     "no-undef": "off",
     "import/extensions": "off",
     "no-mixed-operators": "off",
     "no-console": "off",
     "no-alert": "off",
+    "no-unused-expressions": ["warn", { allowTernary: true }],
   },
 };
