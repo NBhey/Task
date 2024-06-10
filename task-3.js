@@ -19,7 +19,7 @@ export function multiSeven() {
 // Запросить у пользователя ввод числа N. Вывести в консоль среднее арифметическое всех нечётных чисел от 1 до N.
 
 export function averageOf() {
-  const num = +prompt("Введите число");
+  const num = +prompt("Введите число: ");
   let count = 0;
   let res = 0;
   for (let i = 0; i <= num; i++) {
