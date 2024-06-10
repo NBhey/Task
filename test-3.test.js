@@ -37,12 +37,9 @@ describe("Test for task-3", () => {
   });
 
   it("Console log return arithmetic mean of all odd numbers from 1 to N.", () => {
-    jest.spyOn(window, "prompt").mockRestore();
     jest.spyOn(window, "prompt").mockImplementation(() => "5");
-
     const logSpy = jest.spyOn(global.console, "log");
     averageOf();
-
     expect(logSpy).toHaveBeenCalledTimes(1);
     expect(logSpy).toHaveBeenCalledWith(3);
   });
