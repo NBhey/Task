@@ -25,14 +25,8 @@ export default function createDomElement() {
     p.textContent = input.value;
     body.insertBefore(p, input);
     input.value = "";
-    console.log(
-      [...document.querySelectorAll("p")].map((el) => el.textContent),
-    );
     // Если параграфов становится больше 5, первый из них удаляется.
     const allP = document.querySelectorAll("p");
     if (allP.length >= 6) allP[0].remove();
   });
-  console.log(
-    [...document.querySelectorAll("p")].map((el) => el.textContent),
-  );
 }
