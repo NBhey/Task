@@ -20,7 +20,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    "max-len": ["warn", { code: 155 }],
+    "max-len": ["warn", { code: 165 }],
     "object-curly-spacing": "off",
     quotes: "off",
     "quote-props": "off",
@@ -32,5 +32,9 @@ module.exports = {
     "no-alert": "off",
     "no-unused-expressions": ["warn", { allowTernary: true }],
     "no-plusplus": ["warn", { allowForLoopAfterthoughts: true }],
+    "no-shadow": "off",
+    "no-param-reassign": "off",
+    "no-useless-escape": "off",
+    "no-nested-ternary": "off",
   },
 };

@@ -5,7 +5,10 @@ export default function createArr() {
     arr.push(i);
   }
   // Выведите в консоль сумму всех элементов массива.
-  const sum = arr.reduce((currentSum, currentNum) => currentSum + currentNum, 0);
+  const sum = arr.reduce(
+    (currentSum, currentNum) => currentSum + currentNum,
+    0,
+  );
   console.log(sum);
 
   // Создайте новый массив на основе исходного, в котором каждый элемент будет вдвое больше элемента исходного массива с таким же индексом.

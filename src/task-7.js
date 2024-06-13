@@ -2,9 +2,10 @@
 // На странице должны быть три текстовых параграфа, поле ввода и кнопка.
 // Напишите скрипт, который будет выполнять следующие условия:
 
-export default function createDomElement() {
+export default function createDomElement(el) {
   const body = document.querySelector("body");
-  body.innerHTML = `
+  body.append(el);
+  el.innerHTML = `
     <p></p>
     <p></p>
     <p></p>
@@ -23,7 +24,7 @@ export default function createDomElement() {
   button.addEventListener("click", () => {
     const p = document.createElement("p");
     p.textContent = input.value;
-    body.insertBefore(p, input);
+    el.insertBefore(p, input);
     input.value = "";
     // Если параграфов становится больше 5, первый из них удаляется.
     const allP = document.querySelectorAll("p");

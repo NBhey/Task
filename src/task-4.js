@@ -11,7 +11,7 @@ export default function createObj() {
   console.log(user);
   // 2. Создать копию объекта user с именем admin. Добавить новому объекту поле role со значением ‘admin’.
 
-  const admin = { ...user};
+  const admin = { ...user };
   admin.role = "admin";
   console.log(admin);
 
